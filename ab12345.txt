@@ -1,0 +1,26 @@
+<--->
+07/12 11:20
+Anisicoria
+Is it recent or longstanding?
+Recent
+Is there any vision loss?
+[b]Yes[/b]
+Is there any double vision?
+Yes
+Is there any pain?
+Yes
+Is there any light sensitivity?
+Yes
+Is there any haloes around lights?
+Yes
+Have you had previous uveitis?
+Yes
+Do you have diabetes or high blood pressure?
+Yes
+
+Result:
+Uveitis:    35%
+Closed AGA:    28%
+3rd Nerve Palsy:    21%
+horner SAME:    7%
+Adies:    7%

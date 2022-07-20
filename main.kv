@@ -1,0 +1,339 @@
+
+#:import utils kivy.utils
+
+<HistoryMain@Screen>:
+<History@Screen>:
+<Chat_Screen@Screen>:
+
+<CustomWidget>:
+    size_hint_y:None
+    height: 100
+    radius: [10, 10]
+    md_bg_color: utils.get_color_from_hex('#D1CFE2')
+    orientation: "vertical"
+    padding:[0,0,0,10]
+    MDBoxLayout:
+        MDLabel:
+            id: historyItem_date
+            text: "--/--"
+            pos_hint: {"center_x": 0}
+            font_name: "ElsieSwashCaps-Regular.ttf"
+            font_size: 15
+            halign: "center"
+        MDLabel:
+            id: historyItem_time
+            text: "--:--"
+            pos_hint: {"center_x": 1}
+            font_name: "ElsieSwashCaps-Regular.ttf"
+            font_size: 15
+            theme_text_color: "Custom"
+            text_color: utils.get_color_from_hex('#1111ff')
+            halign: "center"
+    MDLabel:
+        id: historyItem_title
+        text: "Headacehes"
+        font_name: "ElsieSwashCaps-Regular.ttf"
+        font_size: 20
+        theme_text_color: "Custom"
+        text_color: utils.get_color_from_hex('#000000')
+        halign: "center"
+    FitImage:
+        id: historyItem_image
+        size_hint:None,None
+        size:60,60
+        pos_hint: {"center_x": .5}
+        source: "icon_folder/Headache.png"
+
+MainWidget:
+<MainWidget>:
+    ScreenManager:
+        id: sm
+        History:
+            name: "history_screen"
+            MDBoxLayout:
+                adaptive_height:True
+                pos_hint:{"top":1}
+                Widget:
+                Custom_Button:
+                    size_hint:None,None
+                    size:75,75
+                    source: "icon_folder/Arrow.png"
+                    on_press: root.switching_to_chat()
+            MDBoxLayout:
+                adaptive_height:True
+                pos_hint: {"center_x": .5, "center_y": .92}
+                MDLabel:
+                    text: "Opto Triage"
+                    halign: "center"
+                    font_name: "ElsieSwashCaps-Regular.ttf"
+                    font_size: 50
+                    size_hint_y:None
+                    height: 50
+            MDBoxLayout:
+                adaptive_height:True
+                pos_hint: {"center_x": .5, "center_y": .84}
+                padding: dp(30)
+                MDLabel:
+                    text: "Results History :"
+                    halign: "left"
+                    font_name: "ElsieSwashCaps-Regular.ttf"
+                    font_size: 32
+                    size_hint_y:None
+                    height: 50
+
+            MDBoxLayout:
+                adaptive_height: True
+                pos_hint: {"center_x": .5, "center_y": .5}
+                radius: [10, 10]
+                size_hint_x:0.9
+                md_bg_color: utils.get_color_from_hex('#D1CFE2')
+                orientation: "vertical"
+                padding: [20,20,20,20]
+                spacing: 10
+                MDBoxLayout:
+                    MDLabel:
+                        id: history_date_placeholder
+                        text: "--/--"
+                        font_name: "ElsieSwashCaps-Regular.ttf"
+                        font_size: 20
+                            
+                    MDLabel:
+                        id: history_time_placeholder
+                        text: "--:--"
+                        halign: "right"
+                        font_name: "ElsieSwashCaps-Regular.ttf"
+                        font_size: 20
+                        theme_text_color: "Custom"
+                        text_color: utils.get_color_from_hex('#1111ff')
+                MDBoxLayout:
+                    size_hint_y:None
+                    height: 50
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    MDLabel:
+                        id: history_name_placeholder
+                        text: "Headacehs"
+                        font_name: "ElsieSwashCaps-Regular.ttf"
+                        font_size: 32
+                        theme_text_color: "Custom"
+                        text_color: utils.get_color_from_hex('#000000')
+                        halign: "center"
+                    FitImage:
+                        size_hint:None,None
+                        size:50,50
+                        pos_hint: {"center_x": .92}
+                        source: "icon_folder/Headache.png"
+                ScrollView:
+                    size_hint_y:None
+                    height: 300
+                    MDLabel:
+                        id: history_placeholder
+                        markup:True
+                        adaptive_height: True
+                        text: "No History"
+                        font_name: "ElsieSwashCaps-Regular.ttf"
+                        font_size: 15
+
+            MDFillRoundFlatButton:
+                pos_hint: {"center_x": .5, "center_y": .14}
+                text: "Go Back"
+                size_hint_y:0.065
+                font_name: "ElsieSwashCaps-Regular.ttf"
+                font_size: 28
+                md_bg_color: utils.get_color_from_hex('#D1CFE2')
+                text_color: utils.get_color_from_hex('#111111')
+                on_press: root.showing_history()
+
+            MDBoxLayout:
+                adaptive_height:True
+                md_bg_color: utils.get_color_from_hex('#D4AFB9')
+                padding:[20,0,20,0]
+                MDIconButton:
+                    icon: "icon_folder/Paper.png"
+                    pos_hint:{"center_x":1}
+                    on_press: root.showing_history()
+                Widget:
+                MDIconButton:
+                    icon: "icon_folder/Home.png"
+                    pos_hint:{"center_x":0.5}
+                    on_press: root.back_to_home("right")
+                Widget:
+                MDIconButton:
+                    icon: "icon_folder/Account.png"
+                    pos_hint:{"right":1}
+                    on_press: root.switching_to_account_page()
+        HistoryMain:
+            name: "history_main_screen"
+      
+            MDBoxLayout:
+                adaptive_height:True
+                pos_hint:{"top":1}
+                Widget:
+                Custom_Button:
+                    size_hint:None,None
+                    size:75,75
+                    source: "icon_folder/Arrow.png"
+                    on_press: root.switching_to_chat()
+                    
+            MDBoxLayout:
+                adaptive_height:True
+                pos_hint: {"center_x": .5, "center_y": .92}
+                MDLabel:
+                    text: "Opto Triage"
+                    halign: "center"
+                    font_name: "ElsieSwashCaps-Regular.ttf"
+                    font_size: 50
+                    size_hint_y:None
+                    height: 60
+
+            MDBoxLayout:
+                adaptive_height:True
+                pos_hint: {"center_x": .5, "center_y": .8}
+                padding: dp(10)
+                MDLabel:
+                    id:new
+                    text: "Results History :"
+                    halign: "left"
+                    font_name: "ElsieSwashCaps-Regular.ttf"
+                    font_size: 32
+                    size_hint_y:None
+                    height: 50
+                     
+            ScrollView:        
+                size_hint_y:0.9
+                height: 300
+                pos_hint: {"center_x": .5, "center_y": .3}
+                size_hint_x:0.86
+                MDGridLayout:
+                    id: historyItems
+                    cols:2
+                    spacing: dp(20)
+                    size_hint_y:None
+
+            MDBoxLayout:
+                adaptive_height:True
+                md_bg_color: utils.get_color_from_hex('#D4AFB9')
+                pos:0,0
+                padding:[20,0,20,0]
+                MDIconButton:
+                    icon: "icon_folder/Paper.png"
+                    pos_hint:{"center_x":1}
+                    on_press: root.showing_history()
+                Widget:
+                MDIconButton:
+                    icon: "icon_folder/Home.png"
+                    pos_hint:{"center_x":0.5}
+                    on_press: root.back_to_home("right")
+                Widget:
+                MDIconButton:
+                    icon: "icon_folder/Account.png"
+                    pos_hint:{"right":1}
+                    on_press: root.switching_to_account_page()
+
+        Chat_Screen:
+            name: "chat_screen"
+            MDBoxLayout:
+                adaptive_height:True
+                pos_hint:{"top":1}
+                Widget:
+                Custom_Button:
+                    size_hint:None,None
+                    size:75,75
+                    source: "icon_folder/Arrow.png"
+                    on_press: root.switching_to_chat()
+            MDBoxLayout:
+                orientation: "vertical"
+                MDBoxLayout:
+                    adaptive_height: True
+                    MDLabel:
+                        text: "Opto Triage"
+                        halign: "center"
+                        font_name: "ElsieSwashCaps-Regular.ttf"
+                        font_size: 50
+                MDBoxLayout:
+                    adaptive_height: True
+                    MDLabel:
+                        text: "Messages"
+                        font_name: "ElsieSwashCaps-Regular.ttf"
+                        font_size: 32
+                        size_hint_y:None
+                        height:70
+                MDBoxLayout:
+                    padding: 20
+                    ScrollView:
+                        MDBoxLayout:
+                            adaptive_height: True
+                            orientation: "vertical"
+                            spacing: 15
+                            MDBoxLayout:
+                                adaptive_height: True
+                                spacing: 10
+                                FitImage:
+                                    size_hint:None,None
+                                    size: 50,50
+                                    source: "icon_folder/Account.png"
+                                MDLabel:
+                                    size_hint_y:None
+                                    height: 50
+                                    text: "Message"
+                                    md_bg_color: utils.get_color_from_hex('#D4AFB9')
+                                    radius: 20
+                            MDBoxLayout:
+                                adaptive_height: True
+                                spacing: 10
+                                FitImage:
+                                    size_hint:None,None
+                                    size: 50,50
+                                    source: "icon_folder/Account.png"
+                                MDLabel:
+                                    size_hint_y:None
+                                    height: 50
+                                    text: "Message"
+                                    md_bg_color: utils.get_color_from_hex('#D1CFE2')
+                                    radius: 20
+                            MDBoxLayout:
+                                adaptive_height: True
+                                spacing: 10
+                                FitImage:
+                                    size_hint:None,None
+                                    size: 50,50
+                                    source: "icon_folder/Account.png"
+                                MDLabel:
+                                    size_hint_y:None
+                                    height: 50
+                                    text: "Message"
+                                    md_bg_color: utils.get_color_from_hex('#D4AFB9')
+                                    radius: 20
+                            MDBoxLayout:
+                                adaptive_height: True
+                                spacing: 10
+                                FitImage:
+                                    size_hint:None,None
+                                    size: 50,50
+                                    source: "icon_folder/Account.png"
+                                MDLabel:
+                                    size_hint_y:None
+                                    height: 50
+                                    text: "Message"
+                                    md_bg_color: utils.get_color_from_hex('#D4AFB9')
+                                    radius: 20
+
+            MDBoxLayout:
+                adaptive_height:True
+                md_bg_color: utils.get_color_from_hex('#D4AFB9')
+                padding:[20,0,20,0]
+                MDIconButton:
+                    icon: "icon_folder/Paper.png"
+                    pos_hint:{"center_x":1}
+                    on_press: root.showing_history()
+                Widget:
+                MDIconButton:
+                    icon: "icon_folder/Home.png"
+                    pos_hint:{"center_x":0.5}
+                    on_press: root.back_to_home("down")
+                Widget:
+                MDIconButton:
+                    icon: "icon_folder/Account.png"
+                    pos_hint:{"right":1}
+                    on_press: root.switching_to_account_page()
+                    
+
