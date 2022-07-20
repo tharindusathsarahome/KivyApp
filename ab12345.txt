@@ -1,10 +1,11 @@
 <--->
-07/12 11:20
+07/14 21:29
 Anisicoria
+
 Is it recent or longstanding?
 Recent
 Is there any vision loss?
-[b]Yes[/b]
+Yes
 Is there any double vision?
 Yes
 Is there any pain?
@@ -18,9 +19,153 @@ Yes
 Do you have diabetes or high blood pressure?
 Yes
 
-Result:
-Uveitis:    35%
+Result:Uveitis:    35%
 Closed AGA:    28%
 3rd Nerve Palsy:    21%
 horner SAME:    7%
 Adies:    7%
+
+
+<--->
+07/14 21:29
+Headache
+
+Are the headaches unilateral or bilateral?
+Unilateral
+Did this headache come on suddenly or gradually?
+Suddenly
+Does this occur in transient episodes? if YES state whether seconds,or up to an hour?
+Seconds
+Are the headaches recurrent?
+Yes
+Is Vision Loss present?
+Yes
+Is Vision loss in central, peri, or shadow like?
+Central
+Do you have any of the following: unusual headache, tender scalp, jaw ache when chewing, ear or neck pain, weight loss, fatigue, muscle aches?
+Yes
+Do you have Eye pain?
+Yes
+Is pain mild, moderate to severe, or shooting.?
+Mild
+Do you have any head/neck pain?
+Yes
+Is eye pain worse when moving your eye?
+Yes
+Are the headaches worse when lying down?
+Yes
+Do the headaches come with aura?
+Yes
+Do you have any of the following: vertigo, limb weakness or numbness?
+Yes
+Do you ever see flashes of light in your vision?
+Yes
+Do the flashes flash/flicker in one eye?
+Yes
+Do you ever see a transient patch of blurred vision with ‘zig-zag’ lines, ‘sparkling lights’ or coloured lines?
+Yes
+Have you had a medical history of migraine?
+Yes
+Have you had a family history of migraine?
+Yes
+
+Result:Migraine(Routine):    19%
+Migraine(Advise):    19%
+Brain Disease(SD):    17%
+ON(Acute):    13%
+ON(PSD):    10%
+ON(PU1):    10%
+HCD(Routine):    2%
+ETTH(Advise):    2%
+Temporal Arteritis:    2%
+Retinal Detachment/Tear:    2%
+
+
+<--->
+07/14 21:29
+Flashes of Light
+
+Are the flashes unilateral or bilateral?
+Unilateral
+Did these flashes come on suddenly or gradually?
+Suddenly
+Do the flashes occur in transient episodes? if YES state whether seconds,or up to an hour?
+Seconds
+Are the flashes recurrent?
+Yes
+Is floaters present?
+Yes
+Flashes/flickers lights?
+Yes
+zig zag / sparkling lights?
+Yes
+Do you have vertigo, limb weakness?
+Yes
+Are you high myope >-3.00D?
+Yes
+prev surgery?
+Yes
+
+Result:tear):    23%
+detach):    23%
+pvd:    15%
+braindis:    15%
+migraine:    11%
+tia:    11%
+
+
+<--->
+07/14 21:31
+Headache
+
+Are the headaches unilateral or bilateral?
+Unilateral
+Did this headache come on suddenly or gradually?
+Suddenly
+Does this occur in transient episodes? if YES state whether seconds,or up to an hour?
+Seconds
+Are the headaches recurrent?
+Yes
+Is Vision Loss present?
+Yes
+Is Vision loss in central, peri, or shadow like?
+Central
+Do you have any of the following: unusual headache, tender scalp, jaw ache when chewing, ear or neck pain, weight loss, fatigue, muscle aches?
+Yes
+Do you have Eye pain?
+Yes
+Is pain mild, moderate to severe, or shooting.?
+Mild
+Do you have any head/neck pain?
+Yes
+Is eye pain worse when moving your eye?
+Yes
+Are the headaches worse when lying down?
+Yes
+Do the headaches come with aura?
+Yes
+Do you have any of the following: vertigo, limb weakness or numbness?
+Yes
+Do you ever see flashes of light in your vision?
+Yes
+Do the flashes flash/flicker in one eye?
+Yes
+Do you ever see a transient patch of blurred vision with ‘zig-zag’ lines, ‘sparkling lights’ or coloured lines?
+Yes
+Have you had a medical history of migraine?
+Yes
+Have you had a family history of migraine?
+Yes
+
+Result:Migraine(Routine):    19%
+Migraine(Advise):    19%
+Brain Disease(SD):    17%
+ON(Acute):    13%
+ON(PSD):    10%
+ON(PU1):    10%
+HCD(Routine):    2%
+ETTH(Advise):    2%
+Temporal Arteritis:    2%
+Retinal Detachment/Tear:    2%
+
+
