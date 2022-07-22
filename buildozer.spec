@@ -13,7 +13,7 @@ package.domain = org.opto
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,ttf,txt,atlas,kv
+source.include_exts = py,png,jpg,atlas,kv
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -22,7 +22,7 @@ source.include_exts = py,png,jpg,ttf,txt,atlas,kv
 source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
-source.exclude_dirs = tests, bin, venv
+source.exclude_dirs = tests, bin, venv, .github, .vscode
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
@@ -37,7 +37,7 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pillow,kivymd,Pyrebase4,plyer,gcloud,googleapis-common-protos,protobuf,pyparsing,oauth2client,pyasn1,pyasn1-modules,rsa,httplib2,six,pycryptodome,python-jwt,jwcrypto,cryptography,cffi,pycparser,Deprecated,wrapt,requests,certifi,idna,urllib3,requests-toolbelt,charset-normalizer
+requirements = python3,kivy,pillow,kivymd,gTTS,click,colorama,six,docutils,requests,certifi,charset-normalizer,idna,urllib3,Pygments,pypiwin32,pywin32,playsound==1.2.2,PyAudio,SpeechRecognition
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
