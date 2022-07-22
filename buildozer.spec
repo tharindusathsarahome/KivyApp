@@ -37,7 +37,7 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pillow,kivymd
+requirements = python3,kivy,pillow,kivymd,Pyrebase4,plyer,gcloud,googleapis-common-protos,protobuf,pyparsing,oauth2client,pyasn1,pyasn1-modules,rsa,httplib2,six,pycryptodome,python-jwt,jwcrypto,cryptography,cffi,pycparser,Deprecated,wrapt,requests,certifi,idna,urllib3,requests-toolbelt,charset-normalizer
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -406,7 +406,6 @@ warn_on_root = 1
 #data/audio/*.wav
 #data/images/original/*
 #
-
 
 #    -----------------------------------------------------------------------------
 #    Profiles
