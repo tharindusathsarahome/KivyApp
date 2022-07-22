@@ -22,7 +22,7 @@ source.include_exts = py,png,jpg,atlas,kv
 source.exclude_exts = spec
 
 # (list) List of directory to exclude (let empty to not exclude anything)
-source.exclude_dirs = tests, bin, venv, .github, .vscode
+source.exclude_dirs = tests, bin, venv
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
@@ -37,7 +37,7 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pillow,kivymd,gTTS,click,colorama,six,docutils,requests,certifi,charset-normalizer,idna,urllib3,Pygments,pypiwin32,playsound==1.2.2,PyAudio,SpeechRecognition
+requirements = python3,kivy,pillow,kivymd,gTTS,click,colorama,six,docutils,requests,certifi,charset-normalizer,idna,urllib3,playsound==1.2.2,SpeechRecognition
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
