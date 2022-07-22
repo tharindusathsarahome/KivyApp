@@ -37,7 +37,7 @@ version = 1.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,pillow,kivymd,gTTS,click,colorama,six,docutils,requests,certifi,charset-normalizer,idna,urllib3,playsound==1.2.2,SpeechRecognition
+requirements = python3,kivy,pillow,kivymd,pyttsx3,comtypes,SpeechRecognition
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
